@@ -12,7 +12,7 @@ pip install -r requirements-gpu.txt
 
 
 # tf modeline çevirme
-python save_model.py --weights ./data/yolov4_ders_lastt.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4 --framework tflite
+python save_model.py --weights ./data/yolov4-obj_last.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4 --framework tflite
 
 # tflite modeline çevirme
 python convert_tflite.py --weights ./checkpoints/yolov4-416 --output ./checkpoints/yolov4-416.tflite
